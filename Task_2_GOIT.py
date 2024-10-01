@@ -14,5 +14,5 @@ def get_numbers_ticket(min, max, quantity):
         return set_of_numbers
 
 
-result = get_numbers_ticket(10,4,1)
+result = get_numbers_ticket(1,36,6)
 print(result)
