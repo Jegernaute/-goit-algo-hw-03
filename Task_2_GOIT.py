@@ -2,7 +2,8 @@ import random
 
 def get_numbers_ticket(min, max, quantity):
     set_of_numbers = []
-    if min >= 1 and max <= 1000:
+    check = max - min
+    if min >= 1 and max <= 1000 and quantity<=check:
         for n in range(min, max):
             set_of_numbers.append(n)
         quantity = random.sample(set_of_numbers, quantity)
@@ -11,7 +12,7 @@ def get_numbers_ticket(min, max, quantity):
     else:
         print("Plaese enter correct data")
         return set_of_numbers
-        
 
-result = get_numbers_ticket(1,36,5)
+
+result = get_numbers_ticket(10,4,1)
 print(result)
